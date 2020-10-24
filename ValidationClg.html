@@ -1,0 +1,68 @@
+<html>
+ <head>
+   <title>My Form Page</title>
+   <script src="Validform.js">
+   </script>
+ </head>
+ <body>
+  <form action="somefile.php" method="post" onsubmit="return validation()">
+   <table>
+    <tr>
+     <td>Name :- </td>
+     <td><input type="text" name="username"/></td>
+    </tr>
+    <tr>
+     <td>Roll No :- </td>
+     <td><input type="text" name="rollno"/></td>
+    </tr>
+    <tr>
+     <td>Email Id :- </td>
+     <td><input type="text" name="email id"/></td>
+    </tr>
+    <tr>
+     <td>Password :- </td>
+     <td><input type="password" name="password"/></td>
+    </tr>
+    <tr>
+     <td>Phn No. :- :- </td>
+     <td><input type="text" name="phn no"/></td>
+    </tr>
+    <tr>
+    <td>Gender :- </td>
+    <td><input type="radio" name="gender"/>M
+        <input type="radio" name="gender"/>F<td/>
+    </tr>
+    <tr>
+     <td>Branch :- </td>
+     <td><input type="checkbox" name="ict"/>ICT
+         <input type="checkbox" name="cs"/>CS
+         <input type="checkbox" name="electrical"/>Electrical
+         <input type="checkbox" name="mech."/>Mechanical</td>
+    </tr>
+    <tr>
+     <td>State :- </td>
+     <td><select>
+         <option>Gujarat</option>
+         <option>Other</option>
+         </select></td>
+    </tr>
+    <tr>
+    <tr>
+     <td>City :- </td>
+     <td><select>
+         <option>Ahmedabad</option>
+         <option>Rajkot</option>
+         <option>Surat</option>
+         <option>Bharuch</option>
+         <option>Kutch</option>
+         <option>Aanand</option>
+         </select></td>
+    </tr>
+    <tr>
+     <td colspan="2" ><input type="submit"/>
+                     <input type="reset"/></td>
+    </tr>
+   </table>
+  </from>
+ </body>
+</html>

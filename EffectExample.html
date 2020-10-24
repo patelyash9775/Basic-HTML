@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <script src="jquery.js"</script>
+  <script>
+   $(document).ready(function(){
+      
+     $("#b1").click(function() { 
+       if($(this).html()=="Show")
+       {
+        $(this).html("Hide");
+        $("img").show();
+        }
+       else
+       {
+        $(this).html("Show");
+        $("img").hide();
+        }
+        
+       });
+    });
+  </script>
+  <style>
+   img
+   {
+    display:none;
+    }
+  </style>
+ </head>
+ <body>
+  <button id="b1">Show</button><br/>
+  <img src="mahantswami.jpeg" width="300px"/>
+ </body>
+</html>
