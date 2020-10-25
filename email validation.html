@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script>
+   function validate()
+   {
+    var result=true;
+    var e=document.getElementsByName("email")[0].value;
+    var atindex=e.indexOf('@');
+    var dotindex=e.lastIndexOf('.');
+    if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3){
+          alert("Please,fill correct email id");
+          result=false;
+       }
+    result=true;
+    }
+  </script>
+ </head>
+ <body>
+  <form action="somefile.php" onsubmit="return validate()">
+   Email id <input type="text" name="email" required/>
+   <input type="submit" value="register"/>
+  </form>
+ </body>
+</html>
